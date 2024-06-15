@@ -1,0 +1,143 @@
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg) scale(1.02);
+    box-shadow: 3px 3px 10px #ff1dd9, -3px -2px 10px #ff1dd9;
+    border-radius: 12px;
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px #e692db, -3px -2px 10px #ec6cce;
+}
+
+.flip-card-front {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(210, 135, 200, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(212, 127, 211, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.back-number {
+    font-size: 6rem;
+    position: relative;
+    right: -80px;
+    top: -20px;
+    color: #ff0000;
+    filter: opacity(40%);
+}
+
+.back-numberr {
+    font-size: 6rem;
+    position: relative;
+    right: 90px;
+    top: 20px;
+    color: #ff0000;
+    filter: opacity(40%);
+}
+
+.gift {
+    width: 40%;
+    position: relative;
+    top: -30px;
+}
+
+.gift-option h1 {
+    margin-top: 20%;
+    margin-bottom: 10%;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.gift-option p {
+    margin-top: 10%;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.gift-option img {
+    width: 50%;
+}
+video{
+    width: 100%;
+    height: 100%;
+}
+
+.board {
+    background-color: rgba(210, 135, 200, 0.75); /* Cor de fundo semelhante ao card */
+    color: rgba(238, 224, 101, 0.9); /* Cor do texto semelhante à dos botões */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px; /* Margem inferior */
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    display: flex; /* Utiliza o sistema de flexbox para alinhar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Alinha o texto centralmente */
+    width: 40%;
+    margin-left: 28%;
+}
+
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 42%;
+    margin-top: 400px;
+    width: 15%;
+    height: 15%;
+}
+.butaum1 {
+    background-color: rgba(210, 135, 200, 0.75);
+    color: #fc8c8c;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 15px;
+    width: 150px;
+    height: 150px;
+    margin-top: 100px;
+    border-radius: 12px;
+    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Adiciona a transição suave */
+    align-self: center; /* Centraliza horizontalmente */
+    margin-bottom: 20px; /* Adiciona margem inferior para posicionar no final */
+    border:solid 5px rgb(215, 215, 113) ;
+}
+
+.butaum1:hover {
+    width: 150px;
+    background-color: #dc6a6a;
+   
+    color: yellow;
+}
+.poema{
+    margin-top: 15px;
+}
+
