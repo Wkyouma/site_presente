@@ -100,10 +100,11 @@
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
   position: relative;
+  margin-top: 100px;
 }
 
 .row2 {
   display: flex;
   justify-content: center; /* Centraliza horizontalmente */
-  gap: 25px; /* Espaço entre os cartões */
+  gap: 105px; /* Espaço entre os cartões */
 }
